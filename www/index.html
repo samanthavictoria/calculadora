@@ -14,58 +14,60 @@
 </head>
 <body>
   <div class="container-fluid">
+    <form name="calc">
   <div class="row mt-3">
     <div class="col-10 offset-1">
-      <input class="form-control form-control-lg" type="text" id="result" readonly>
+      <input class="form-control form-control-lg" type="text" name="visor">
     </div>
   </div>
 
 
 <div class="row mt-3">
   <div class="col-10  offset-1">
-    <button type="button" class="btn btn-outline-info btn-lg" id="virg">,</button>
-    <button type="button" class="btn btn-outline-info btn-lg" id="pot">x²</button>
-    <button type="button" class="btn btn-outline-info btn-lg"id="expo" >N!</button>
-    <button type="button" class="btn btn-outline-info btn-lg" id="divi">/</button>
+    <button type="button" class="btn btn-outline-info btn-lg " value="," onclick="botao(value);">,</button>
+    <button type="button" class="btn btn-outline-info btn-lg "value="x²" onclick="botao(value);">x²</button>
+    <button type="button" class="btn btn-outline-info btn-lg "value="N!" onclick="botao(value);" >N!</button>
+    <button type="button" class="btn btn-outline-info btn-lg "value="/" onclick="botao(value);" >/</button>
   </div>
 </div>
 
 <div class="row mt-2">
   <div class="col-10  offset-1">
-    <button type="button" class="btn btn-outline-dark btn-lg" id="um">1</button>
-    <button type="button" class="btn btn-outline-dark btn-lg" id="dois">2</button>
-    <button type="button" class="btn btn-outline-dark btn-lg" id="tres">3</button>
-    <button type="button" class="btn btn-outline-info btn-lg" id="mult">X</button>
+    <button type="button" class="btn btn-outline-dark btn-lg"value="1" onclick="botao(value);">1</button>
+    <button type="button" class="btn btn-outline-dark btn-lg " value="2" onclick="botao(value);">2</button>
+    <button type="button" class="btn btn-outline-dark btn-lg"value="3" onclick="botao(value);">3</button>
+    <button type="button" class="btn btn-outline-info btn-lg "value="X" onclick="botao(value);">X</button>
   </div>
 </div>
 
 <div class="row mt-2">
   <div class="col-10  offset-1">
-    <button type="button" class="btn btn-outline-dark btn-lg" id="quatro">4</button>
-    <button type="button" class="btn btn-outline-dark btn-lg " id="cinco">5</button>
-    <button type="button" class="btn btn-outline-dark btn-lg" id="seis">6</button>
-    <button type="button" class="btn btn-outline-info btn-lg" id="mult">-</button>
+    <button type="button" class="btn btn-outline-dark btn-lg "value="4" onclick="botao(value);">4</button>
+    <button type="button" class="btn btn-outline-dark btn-lg "value="5" onclick="botao(value);" >5</button>
+    <button type="button" class="btn btn-outline-dark btn-lg "value="6" onclick="botao(value);" >6</button>
+    <button type="button" class="btn btn-outline-info btn-lg "value="-" onclick="botao(value);" >-</button>
   </div>
 </div>
 
 <div class="row mt-2">
   <div class="col-10  offset-1">
-    <button type="button" class="btn btn-outline-dark btn-lg" id="sete">7</button>
-    <button type="button" class="btn btn-outline-dark btn-lg " id="oito">8</button>
-    <button type="button" class="btn btn-outline-dark btn-lg" id="nove">9</button>
-    <button type="button" class="btn btn-outline-info btn-lg" id="adc">+</button>
+    <button type="button" class="btn btn-outline-dark btn-lg"value="7" onclick="botao(value);">7</button>
+    <button type="button" class="btn btn-outline-dark btn-lg"value="8" onclick="botao(value);">8</button>
+    <button type="button" class="btn btn-outline-dark btn-lg"value="9" onclick="botao(value);">9</button>
+    <button type="button" class="btn btn-outline-info btn-lg "value="+" onclick="botao(value);">+</button>
   </div>
 </div>
 
 <div class="row mt-2">
   <div class="col-10  offset-1">
-    <button type="button" class="btn btn-outline-info btn-lg"id="limpar">AC</button>
-    <button type="button" class="btn btn-outline-dark btn-lg " id="zero">0</button>
-    <button type="button" class="btn btn-outline-info btn-lg" id="raiz">√</button>
-    <button type="button" class="btn btn-outline-info btn-lg" id="igual">=</button>
+    <button type="button" class="btn btn-outline-info btn-lg"value="AC" onclick="reset();">AC</button>
+    <button type="button" class="btn btn-outline-dark btn-lg"value="0" onclick="botao(0);" >0</button>
+    <button type="button" class="btn btn-outline-info btn-lg"value="√" onclick="botao(value);">√</button>
+    <button type="button" class="btn btn-outline-info btn-lg"value="=" onclick="calcule();">=</button>
   </div>
 </div>
-
+</form>    
 </div>
+
 </body>
 </html>
